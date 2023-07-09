@@ -1,0 +1,359 @@
+#myFooter {
+    background-color: #3c3d41;
+    color: #fff;
+    padding-top: 30px
+}
+
+#myFooter .footer-copyright {
+    background-color: #333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center
+}
+
+#myFooter .row {
+    margin-bottom: 60px
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 30px
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none
+}
+
+#myFooter a:focus,
+#myFooter a:hover,
+.footer-navigation h3 a {
+    text-decoration: none;
+    color: #fff
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: .2s
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a
+}
+
+#myFooter .twitter:hover {
+    color: #00aced
+}
+
+#myFooter .linkedin:hover {
+    color: #007bb6
+}
+
+#myFooter .btn {
+    color: #fff;
+    background-color: #d84b6b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 10px auto 0;
+    line-height: 25px
+}
+
+@media screen and (max-width:767px) {
+    #myFooter {
+        text-align: center
+    }
+}
+
+.header {
+    width: 100%;
+    margin-top: 97px
+}
+
+.header-container {
+    background: url(../../assets/img/pool.jpg) center center/cover no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: 50px 0 300px;
+    height: auto
+}
+
+.fit-cover {
+    object-fit: cover
+}
+
+.bs-icon {
+    --bs-icon-size: .75rem;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--bs-icon-size);
+    width: calc(var(--bs-icon-size) * 2);
+    height: calc(var(--bs-icon-size) * 2);
+    color: var(--bs-primary)
+}
+
+.bs-icon-xs {
+    --bs-icon-size: 1rem;
+    width: calc(var(--bs-icon-size) * 1.5);
+    height: calc(var(--bs-icon-size) * 1.5)
+}
+
+.bs-icon-sm {
+    --bs-icon-size: 1rem
+}
+
+.bs-icon-md {
+    --bs-icon-size: 1.5rem
+}
+
+.bs-icon-lg {
+    --bs-icon-size: 2rem
+}
+
+.bs-icon-xl {
+    --bs-icon-size: 2.5rem
+}
+
+.bs-icon.bs-icon-primary {
+    color: var(--bs-white);
+    background: var(--bs-primary)
+}
+
+.bs-icon.bs-icon-primary-light {
+    color: var(--bs-primary);
+    background: rgba(var(--bs-primary-rgb), .2)
+}
+
+.bs-icon.bs-icon-semi-white {
+    color: var(--bs-primary);
+    background: rgba(255, 255, 255, .5)
+}
+
+.bs-icon.bs-icon-rounded {
+    border-radius: .5rem
+}
+
+.bs-icon.bs-icon-circle {
+    border-radius: 50%
+}
+
+footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 80px;
+    bottom: 0;
+    color: #fff
+}
+
+.footer-navigation h3 {
+    margin: 0 0 20px;
+    font: 36px Cookie, cursive;
+    color: #fff
+}
+
+.footer-navigation h3 span {
+    color: #5383d3
+}
+
+.footer-navigation p.links a {
+    color: #fff;
+    text-decoration: none
+}
+
+.footer-navigation p.company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px
+}
+
+@media (max-width:767px) {
+    .footer-contacts {
+        margin: 30px 0
+    }
+}
+
+.footer-contacts p {
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle
+}
+
+.footer-contacts p a {
+    color: #5383d3;
+    text-decoration: none
+}
+
+.fa.footer-contacts-icon {
+    background-color: #33383b;
+    color: #fff;
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin: 10px 15px 10px 0
+}
+
+span.new-line-span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2
+}
+
+.footer-about h4 {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+.footer-about p {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0
+}
+
+div.social-links {
+    margin-top: 20px;
+    color: #fff
+}
+
+.social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px
+}
+
+.nav-clr,
+.nav-link {
+    color: #fff;
+    font-family: Montserrat
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--bs-yellow)
+}
+
+.nav-link:hover {
+    color: var(--bs-yellow);
+    font-family: Montserrat
+}
+
+.btn {
+    background-color: var(--bs-focus-ring-color);
+    color: #fff;
+    font-weight: 600
+}
+
+.btn:hover {
+    background-color: var(--bs-info);
+    color: #fff;
+    font-weight: 600
+}
+
+.header-container.back {
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover
+}
+
+.btn-book {
+    background-color: rgba(49, 75, 209, .5)
+}
+
+.btn-book:hover {
+    background-color: #2616e3
+}
+
+.f-clr,
+.heading {
+    color: #fff
+}
+
+.heading p {
+    font-weight: 500
+}
+
+.btn-dis {
+    background-color: #fff;
+    color: #0ea11c;
+    border-color: #0ea11c
+}
+
+.btn-dis:hover {
+    background-color: #0ea11c;
+    color: #fff;
+    border-color: #0ea11c
+}
+
+.border-1 {
+    border: double #246db7;
+    border-radius: 14px;
+    opacity: 1
+}
+
+.me-3 {
+    background-color: #0077e2;
+    border-color: #0077e2
+}
+
+.me-3:hover {
+    background-color: #f02e2e;
+    border-color: #f02e2e
+}
