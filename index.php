@@ -5,26 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>stayeeza</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Atomic+Age&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Autour+One&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barriecito&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barrio&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bowlby+One&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Inline&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Croissant+One&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles-home.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-md py-3"
+<body style="background: url(&quot;assets/img/download.png&quot;), #fff9e4;">
+    <nav class="navbar navbar-expand-md py-3 navbar-light"
         style="background: #343a40;margin-top: -6px;padding-bottom: 22px;margin-bottom: -3px;padding-top: 5px;height: 65px;">
         <div class="container"><img src="assets/img/logo-color%20(1).png" width="85" height="45"
                 style="padding-left: 0px;"><a class="navbar-brand d-flex align-items-center" href="#"></a><button
@@ -59,82 +46,86 @@
         </div>
     </section>
     <div class="container py-4 py-xl-5"
-        style="padding: 8px 12px;padding-top: 40px;margin-bottom: -36px;background: var(--bs-info-border-subtle);margin-top: 16px;">
-        <div class="row gy-4 gy-md-0" style="padding-top: 0px;">
-            <div class="col-md-6">
-                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;"
-                        src="assets/img/1.gif"></div>
-            </div>
-            <div class="col-md-6 d-md-flex align-items-md-center">
-                <div style="max-width: 350px;">
-                    <h2 class="text-uppercase fw-bold" style="font-family: Actor, sans-serif;">Your Ultimate Guide to
-                        Effortless Hotel and Accommodation Bookings</h2>
-                    <p class="my-3">Your One-Stop Destination for Effortless Hotel and Accommodation Bookings. Browse
-                        Through a Vast Selection of Handpicked Properties, Discover Exclusive Deals, and Experience a
-                        Seamless Booking Process that Puts Your Comfort and Convenience at the Heart of Every Stay. </p>
-                    <a class="btn btn-primary btn-lg me-2 btn-dis" role="button" href="#">DISCOVER&nbsp;<i
-                            class="fas fa-light fas fa-globe-americas fab fa-spin"></i></a>
-                </div>
+    style="padding: 8px 12px;padding-top: 40px;margin-bottom: -36px;background: var(--bs-info-border-subtle);margin-top: 16px;">
+    <div class="row gy-4 gy-md-0" style="padding-top: 0px;">
+        <div class="col-md-6">
+            <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;"
+                    src="assets/img/1.gif"></div>
+        </div>
+        <div class="col-md-6 d-md-flex align-items-md-center">
+            <div style="max-width: 500px;">
+                <h2 class="text-uppercase fw-bold" style="font-family: Actor, sans-serif;">Your Ultimate Guide to
+                    Effortless Hotel and Accommodation Bookings</h2>
+                <p class="my-3">Your One-Stop Destination for Effortless Hotel and Accommodation Bookings. Browse
+                    Through a Vast Selection of Handpicked Properties, Discover Exclusive Deals, and Experience a
+                    Seamless Booking Process that Puts Your Comfort and Convenience at the Heart of Every Stay. </p>
+                <a class="btn btn-primary btn-lg me-2 btn-dis" role="button" href="#">BooK YouR RooM&nbsp;<i
+                        class="fas fa-light fas fa-globe-americas fab fa-spin"></i></a>
             </div>
         </div>
-    </div>    
-    
-    <div class="container py-4 py-xl-5 justify-content-center"
-        style="margin-top: 16px;background: var(--bs-warning-bg-subtle);">
-        <div class="row mb-5">
-            <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h2 style="font-family: 'Autour One', serif;">Book with Ease: Your Gateway to Seamless Travel
-                    Experiences</h2>
-                <p class="w-lg-50" style="font-family: Actor, sans-serif;">Unlock the world of hassle-free travel with
-                    our booking platform. Discover an extensive selection of accommodations and experiences, and book
-                    with confidence. From luxurious hotels to budget-friendly options, we have you covered. Explore,
-                    plan, and embark on your next adventure effortlessly with our seamless booking process</p>
-            </div>
-        </div>
-        <div class="row gy-4 row-cols-1 row-cols-md-2">
-            <div class="col border-1">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;"
-                            src="assets/img/bangkok-thailand-august-12-2016-beautiful-luxury-bedroom-int.jpg"></div>
-                    <div class="py-4 py-lg-0 px-lg-4" style="border-color: rgb(0,0,0);">
-                        <h4>Luxury at its finest</h4>
-                        <p>Experience world-class amenities, impeccable service, and stunning views at our upscale
-                            resort. Book your unforgettable stay today.</p><button class="btn btn-primary me-3"
-                            type="button">BOOK</button>
-                    </div>
+    </div>
+</div>
+    <div class="mt-2">
+        <div class="container py-4 py-xl-5 justify-content-center"
+            style="margin-top: 16px;background: var(--bs-warning-bg-subtle);">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 style="font-family: 'Autour One', serif;">Book with Ease: Your Gateway to Seamless Travel
+                        Experiences</h2>
+                    <p class="w-lg-50" style="font-family: Actor, sans-serif;">Unlock the world of hassle-free travel
+                        with our booking platform. Discover an extensive selection of accommodations and experiences,
+                        and book with confidence. From luxurious hotels to budget-friendly options, we have you covered.
+                        Explore, plan, and embark on your next adventure effortlessly with our seamless booking process
+                    </p>
                 </div>
             </div>
-            <div class="col border-1">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;"
-                            src="assets/img/colonial-style-house-night-scene.jpg"></div>
-                    <div class="py-4 py-lg-0 px-lg-4" style="border-color: rgb(0,0,0);">
-                        <h4>Urban chic meets comfort</h4>
-                        <p>Stay in the heart of the city, surrounded by trendy shops, vibrant nightlife, and top-notch
-                            dining options.</p><button class="btn btn-primary me-3" type="button">BOOK</button>
+            <div class="row gy-4 row-cols-1 row-cols-md-2">
+                <div class="col border-1 home-book">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;"
+                                src="assets/img/bangkok-thailand-august-12-2016-beautiful-luxury-bedroom-int.jpg"></div>
+                        <div class="py-4 py-lg-0 px-lg-4" style="border-color: rgb(0,0,0);">
+                            <h4>Luxury at its finest</h4>
+                            <p>Experience world-class amenities, impeccable service, and stunning views at our upscale
+                                resort. Book your unforgettable stay today.</p><button class="btn btn-primary me-3"
+                                type="button">BOOK</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col border-1">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;"
-                            src="assets/img/interior-modern-comfortable-hotel-room.jpg"></div>
-                    <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Cityscape Hotel</h4>
-                        <p>Modern and stylish, our rooms offer a chic retreat in the heart of the metropolis, providing
-                            easy access to top attractions and entertainment.</p><button class="btn btn-primary me-3"
-                            type="button">BOOK</button>
+                <div class="col border-1" style="border-radius: 25px;">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;"
+                                src="assets/img/colonial-style-house-night-scene.jpg"></div>
+                        <div class="py-4 py-lg-0 px-lg-4" style="border-color: rgb(0,0,0);">
+                            <h4>Urban chic meets comfort</h4>
+                            <p>Stay in the heart of the city, surrounded by trendy shops, vibrant nightlife, and
+                                top-notch dining options.</p><button class="btn btn-primary me-3"
+                                type="button">BOOK</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col border-1">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;"
-                            src="assets/img/house-landscape-pool-relaxation-garden.jpg"></div>
-                    <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Beachfront bliss awaits</h4>
-                        <p>Relax on pristine sandy shores, soak up the sun, and enjoy endless ocean views from the
-                            comfort of your room.</p><button class="btn btn-primary me-3" type="button">BOOK</button>
+                <div class="col border-1" style="border-radius: 25px;">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;"
+                                src="assets/img/interior-modern-comfortable-hotel-room.jpg"></div>
+                        <div class="py-4 py-lg-0 px-lg-4">
+                            <h4>Cityscape Hotel</h4>
+                            <p>Modern and stylish, our rooms offer a chic retreat in the heart of the metropolis,
+                                providing easy access to top attractions and entertainment.</p><button
+                                class="btn btn-primary me-3" type="button">BOOK</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col border-1" style="border-radius: 25px;">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;"
+                                src="assets/img/house-landscape-pool-relaxation-garden.jpg"></div>
+                        <div class="py-4 py-lg-0 px-lg-4">
+                            <h4>Beachfront bliss awaits</h4>
+                            <p>Relax on pristine sandy shores, soak up the sun, and enjoy endless ocean views from the
+                                comfort of your room.</p><button class="btn btn-primary me-3"
+                                type="button">BOOK</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -236,7 +227,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover d" style="height: 200px;"
                         src="assets/img/3.jpg">
                     <div class="card-body p-4" style="height: 390.8px;">
                         <p class="text-primary card-text mb-0">
@@ -271,7 +262,7 @@
                         height="300"></div>
             </div>
             <div class="col-md-6 col-xxl-6 offset-xxl-0 d-md-flex align-items-md-center">
-                <div style="max-width: 350px;">
+                <div style="width: 505px;">
                     <h2 class="text-uppercase fw-bold text-primary" style="font-family: 'Autour One', serif;">Expand
                         Your Reach: Showcase Your Hotel to a Global Audience</h2>
                     <p class="my-3" style="color: rgb(252,252,252);">Promote your hotel to millions of potential guests
@@ -313,10 +304,10 @@
                             class="fa fa-github"></i></a></div>
             </div>
         </div>
-    </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </footer><!-- End:  Footer -->
     <script src="https://kit.fontawesome.com/415a9991c1.js" crossorigin="anonymous"></script>
-    <script src="assets/js/slideshow.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
