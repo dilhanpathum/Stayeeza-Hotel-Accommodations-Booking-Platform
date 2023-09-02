@@ -21,13 +21,60 @@
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1"
                 style="color: rgb(240,245,251);font-family: Montserrat, sans-serif;margin: -2px;margin-left: 12px;background: #343a40;padding: 12px;">
+                <?php session_start();
+                    
+            
+            ?>
                 <ul class="navbar-nav me-auto nav-clr">
-                    <li class="nav-item"><a class="nav-link active nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Hotels</a></li>
-                    <li class="nav-item"><a class="nav-link hide" href="#">Dashboard</a></li>
-                </ul><button class="btn btn-primary me-3" type="button" style="margin-right: 20px;">LOG
-                    IN</button><button class="btn btn-primary me-3" type="button">REGISTER</button>
+                    
+                    <?php if(isset($_SESSION['email'])){
+            
+            ?>
+                    <?php if ($_SESSION['isowner']) {
+                        ?>
+                    <li class="nav-item"><a class="nav-link hide" href="addhotel.php">Dashboard</a></li>     
+                      <?php
+        } ?>
+                    
+                    <?php if ($_SESSION['isadmin']) {
+                        ?>
+                    <li class="nav-item"><a class="nav-link hide" href="adminpanel-user.php">Admin Panel</a></li>   
+                    <?php
+        }
+                    }?>
+                    
+                </ul>
+                
+                <?php if(!isset($_SESSION['email'])){
+            
+            ?>
+                <a class="btn btn-primary me-3" role="button" data-bss-hover-animate="pulse" href="login.php">LOG IN</a>
+                <a class="btn btn-primary me-3" role="button" data-bss-hover-animate="pulse" href="registration.php">REGISTER</a>
+                
+                <?php }else{
+                    if($_SESSION['isadmin']){
+                    ?>
+                
+                <a class="btn btn-primary me-3" role="button" data-bss-hover-animate="pulse" href="adminpanel-user.php">Admin <?php echo $_SESSION["username"]; ?></a>
+                <a class="btn btn-primary me-3" role="button" data-bss-hover-animate="pulse" href="logout.php">LOG OUT</a>
+                <?php
+                    }elseif($_SESSION['isowner']){
+                        ?>
+                <a class="btn btn-primary me-3" role="button" data-bss-hover-animate="pulse" href="userprofile.php?owner=<?php echo $_SESSION["userid"]; ?>"><i class="fas fa-light fa-user"></i> <?php echo $_SESSION["username"]; ?></a>
+                <a class="btn btn-primary me-3" role="button" data-bss-hover-animate="pulse" href="logout.php">LOG OUT</a>
+                <?php
+                    }else{
+                        ?>
+                <a class="btn btn-primary me-3" role="button" data-bss-hover-animate="pulse" href="userprofile.php?user=<?php echo $_SESSION["userid"]; ?>"><i class="fas fa-light fa-user"></i> <?php echo $_SESSION["username"]; ?></a>
+                <a class="btn btn-primary me-3" role="button" data-bss-hover-animate="pulse" href="logout.php">LOG OUT</a>
+                <?php
+                    }
+                }
+            
+            ?>
             </div>
         </div>
     </nav>

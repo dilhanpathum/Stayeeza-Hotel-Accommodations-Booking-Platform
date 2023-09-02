@@ -21,27 +21,35 @@
                     Registration Form Stayeeza</h2>
                 <p></p>
             </div>
-            <form action="index.html" method="post" enctype="multipart/form-data" role="form"
+            <form action="register.php" method="post" enctype="multipart/form-data" role="form"
                 style="background: #221717b0;border-style: none;border-color: var(--bs-primary-bg-subtle);">
-                <div class="form-group mb-3"><label class="form-label fw-bold text-light">Full Name</label><input
-                        class="form-control" type="tel" placeholder="Full Name" name="phone" required=""></div>
-                <div class="form-group mb-3"><label class="form-label fw-bold text-light">Address</label><input
-                        class="form-control" type="tel" placeholder="Address" name="phone" required=""></div>
+                <div class="form-group mb-3"><label class="form-label fw-bold text-light">First Name</label><input
+                        class="form-control" type="text" placeholder="Full Name" name="fname" required=""></div>
+                        
+                <div class="form-group mb-3"><label class="form-label fw-bold text-light">Last Name</label><input
+                        class="form-control" type="text" placeholder="Last Name" name="lname" required=""></div>
+                        
                 <div class="form-group mb-3"><label class="form-label fw-bold text-light">Contact Number</label><input
-                        class="form-control" type="tel" placeholder="Contact Number" name="phone" required=""></div>
+                        class="form-control" type="text" placeholder="Contact Number" name="cNumber" required=""></div>
+                        
                 <div class="form-group mb-3"><label class="form-label fw-bold text-light">Email</label><input
-                        class="form-control" type="tel" placeholder="Email" name="phone" required=""></div>
+                        class="form-control" type="text" placeholder="Email" name="email" required=""></div>
+                        
                 <div class="form-group mb-3"><label class="form-label fw-bold text-light">Password</label><input
-                        class="form-control" type="password" id="formum2" placeholder="Password"></div><label
+                        class="form-control" type="password" id="formum2" placeholder="Password" name="pass"></div>
+                        
+                        <label
                     class="form-label fw-bold text-light" style="padding-right: 22px;">Gender</label><button
-                    class="btn btn-dark btn-sm" type="button" style="background: var(--bs-primary);">Male</button>
+                    class="btn btn-dark btn-sm" type="button" style="background: var(--bs-primary);">Male<input type="radio" name="gender"
+                                                                                                                value="Male" style="width: 30px;"></button>
                 <div class="btn-group" role="group"></div><button class="btn btn-dark btn-sm" type="button"
-                    style="background: var(--bs-primary);">Female</button>
+                                                                  style="background: var(--bs-primary);">Female<input type="radio" name="gender" value="Female"
+                         style="width: 30px;"></button>
                 <hr style="margin-top: 30px;margin-bottom: 10px;"><label class="form-label btn btn-secondary"
-                    style="width: 199.288px;padding: 8px 12px;">Business Account<input type="radio" name="options"
-                        checked="" style="width: 30px;"></label><label class="form-label btn btn-secondary"
-                    style="margin-left: 14px;width: 200.925px;height: 41px;">Personal Account<input type="radio"
-                        name="options" checked="" style="width: 33px;"></label><button
+                                                                         style="width: 199.288px;padding: 8px 12px;">Business Account<input type="radio" name="account" value="Business"
+                         style="width: 30px;"></label><label class="form-label btn btn-secondary"
+                               style="margin-left: 14px;width: 200.925px;height: 41px;">Personal Account<input type="radio" value="Personal"
+                        name="account"  style="width: 33px;"></label><button
                     class="btn btn-primary d-block w-100" type="submit"
                     style="color: var(--bs-btn-hover-color);margin-right: -27px;padding-right: 44px;padding-bottom: 4px;margin-bottom: 6px;width: 400px;height: 50px;border-color: var(--bs-body-bg);margin-top: 12px;"><i
                         class="fas fa-save"></i>&nbsp;REGISTER</button>
