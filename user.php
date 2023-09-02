@@ -1,3 +1,10 @@
+
+<?php
+
+require 'Classes/Admin.php';
+use Classes\Admin;
+
+?>
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
 
@@ -26,14 +33,23 @@
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Hotels</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Admin Panel</a></li>
                 
-            </ul><button class="btn btn-primary me-3" type="button" style="margin-right: 20px;">LOG
-                IN</button><button class="btn btn-primary me-3" type="button">REGISTER</button>
+            </ul><button class="btn btn-primary me-3" type="button" style="margin-right: 20px;">Admin Pathum</button><button class="btn btn-primary me-3" type="button">Log Out</button>
         </div>
     </div>
 </nav><br>
+
+<?php
+    if(isset($_GET["viewUser"])){
+        $id = $_GET["viewUser"];
+        
+        $user = new Admin();
+        $rs = $user->viewUser($id);
+        foreach ($rs as $users){
+?>
     <div class="container">
-        <h1>EDIT YOUR PROFILE</h1>
+        <h1>USER PROFILE</h1>
         <div class="main-body" style="background: #343a40;">
             <div class="row gutters-sm">
                 <div class="col-md-4 mb-3">
@@ -42,7 +58,7 @@
                             <div class="text-center d-flex flex-column align-items-center"><img class="rounded-circle"
                                     src="assets/img/n.png" alt="Admin" width="150">
                                 <div class="mt-3">
-                                    <h4>Dasun Kanishka</h4><button class="btn btn-primary">Home</button>
+                                    <h4><?php echo $users["userFirstName"]; ?> <?php echo $users["userLastName"]; ?></h4>
                                 </div>
                             </div>
                         </div>
@@ -55,33 +71,33 @@
                                 <div class="col-sm-3">
                                     <h6 class="mb-0">First Name</h6>
                                 </div>
-                                <div class="col-sm-9 text-secondary"><span> Dasun&nbsp;</span></div>
+                                <div class="col-sm-9 text-secondary"><span> <?php echo $users["userFirstName"]; ?>&nbsp;</span></div>
                             </div>
                             <hr>
                             <div class="row">
                                 <div class="col-sm-3">
                                     <h6 class="mb-0">Last Name</h6>
                                 </div>
-                                <div class="col-sm-9 text-secondary"><span> kanishkaa</span></div>
+                                <div class="col-sm-9 text-secondary"><span><?php echo $users["userLastName"]; ?></span></div>
                             </div>
                             <hr>
                             <div class="row">
                                 <div class="col-sm-3">
                                     <h6 class="mb-0">Email</h6>
                                 </div>
-                                <div class="col-sm-9 text-secondary"><span> dasun@gmail.com</span></div>
+                                <div class="col-sm-9 text-secondary"><span><?php echo $users["userEmail"]; ?></span></div>
                             </div>
                             <hr>
                             <div class="row">
                                 <div class="col-sm-3">
                                     <h6 class="mb-0">Phone</h6>
                                 </div>
-                                <div class="col-sm-9 text-secondary"><span>0772434544</span></div>
+                                <div class="col-sm-9 text-secondary"><span><?php echo $users["userPhoneNo"]; ?></span></div>
                             </div>
                             <hr>
                             <div class="row">
-                                <div class="col-sm-12"><a class="btn btn-info col-3" role="button" target="__blank"
-                                        href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                                <div class="col-sm-12"><a class="btn btn-info col-3" role="button" 
+                                                          href="adminpanel-user.php">Go Back</a>
                                 </div>
                             </div>
                         </div>
@@ -90,6 +106,89 @@
             </div>
         </div>
     </div>
+<?php
+
+        }
+    }
+?>
+<?php
+    if(isset($_GET["viewHOwner"])){
+        $id = $_GET["viewHOwner"];
+        
+        $user = new Admin();
+        $rs = $user->viewHOwner($id);
+        foreach ($rs as $users){
+?>
+    <div class="container">
+        <h1>USER PROFILE</h1>
+        <div class="main-body" style="background: #343a40;">
+            <div class="row gutters-sm">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="text-center d-flex flex-column align-items-center"><img class="rounded-circle"
+                                    src="assets/img/n.png" alt="Admin" width="150">
+                                <div class="mt-3">
+                                    <h4><?php echo $users["ownerFirstName"]; ?> <?php echo $users["ownerLastName"]; ?></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">First Name</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary"><span> <?php echo $users["ownerFirstName"]; ?>&nbsp;</span></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Last Name</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary"><span><?php echo $users["ownerLastName"]; ?></span></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Email</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary"><span><?php echo $users["ownerEmail"]; ?></span></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Phone</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary"><span><?php echo $users["ownerPhoneNo"]; ?></span></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">No of Hotels</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary"><span><?php echo $users["noOfHotels"]; ?></span></div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-12"><a class="btn btn-info col-3" role="button" 
+                                                          href="adminpanel-owner.php">Go Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php
+
+        }
+    }
+?>
     <footer>
         <div class="row">
             <div class="col-sm-6 col-md-4 col-xxl-3 footer-navigation col-sm-4">
