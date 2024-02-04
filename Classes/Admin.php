@@ -141,5 +141,23 @@ class Admin {
             
         }
     }
+    
+    public function paymentView(){
+
+        $query = "SELECT invoiceNo,hotelId,payment.bookingId,payment.userId,hotelCharges,paymentDate,bookingDate,hotelName,payment.roomType,status FROM payment INNER JOIN booking ON payment.bookingId = booking.bookingId;";
+        $dbcon = new DBConnecter();
+        try {
+            $con = $dbcon->getConnection();
+            $pstmt = $con->prepare($query);
+
+            $pstmt->execute();
+            $rs = $pstmt->fetchAll(PDO::FETCH_ASSOC);
+            
+            return $rs;
+        } catch(PDOException $e){
+            echo $e->getMessage();
+            
+        }
+    }
 
 }

@@ -36,7 +36,7 @@ class HotelOwner {
         $this->gender = $gender;
     }
     public function registerHOwner(){
-        $query = "INSERT INTO HotelOwner(ownerFirstName,ownerLastName,ownerGender,ownerPhoneNo,ownerEmail,ownerPassword,noOfHotels) VALUES(?,?,?,?,?,?,?)";
+        $query = "INSERT INTO HotelOwner(ownerFirstName,ownerLastName,ownerGender,ownerPhoneNo,ownerEmail,ownerPassword) VALUES(?,?,?,?,?,?)";
         $dbcon = new DBConnecter();
         try {
             $con = $dbcon->getConnection();
@@ -47,11 +47,11 @@ class HotelOwner {
             $pstmt->bindValue(4, $this->contact);
             $pstmt->bindValue(5, $this->email);
             $pstmt->bindValue(6, $this->password);
-            $pstmt->bindValue(7, "0");
+
             $pstmt->execute();
             
             if($pstmt->rowCount()>0){
-                header("Location:login.php");
+                header("Location:../web-pages/login.php?success=2");
             }
             
         } catch(PDOException $e){
@@ -71,6 +71,27 @@ class HotelOwner {
             $rs = $pstmt->fetchAll(PDO::FETCH_ASSOC);
             
             return $rs;
+        } catch(PDOException $e){
+            echo $e->getMessage();
+            
+        }
+    }
+    
+    public function updateOwner($ownerid,$fname,$lname,$email,$contact,$profilePic){
+        
+        $query = "UPDATE hotelowner SET ownerFirstName=?, ownerLastName=? , ownerEmail=?, ownerPhoneNo=?, profilePic=? WHERE ownerId =?";
+        $dbcon = new DBConnecter();
+        try {
+            $con = $dbcon->getConnection();
+            $pstmt = $con->prepare($query);
+            $pstmt->bindValue(1, $fname);
+            $pstmt->bindValue(2, $lname);
+            $pstmt->bindValue(3, $email);
+            $pstmt->bindValue(4, $contact);
+            $pstmt->bindValue(5, $profilePic);
+            $pstmt->bindValue(6, $ownerid);
+            $pstmt->execute();
+            
         } catch(PDOException $e){
             echo $e->getMessage();
             
